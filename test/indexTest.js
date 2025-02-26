@@ -82,7 +82,7 @@ describe("index.css", () => {
     const rule = findRule(css.cssRules, "div");
     const hint = "Missing width property for div";
     expect(rule.style["width"], hint).to.eq("700px");
-  });
+  })
 
   it("sets <div> margin to auto", () => {
     const rule = findRule(css.cssRules, "div");
